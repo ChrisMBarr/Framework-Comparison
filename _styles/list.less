@@ -1,0 +1,170 @@
+@color-background: #DED4B9;	//Tan
+@color-dark: #46433A;		//Black
+@color-light: #FFF;			//White
+@color-highlight: #CE534D;	//Red
+@color-bright: #64B6B1;		//Teal
+@spacing: 10px;
+@radius: 5px;
+
+
+//-----------------------------------------
+//`mixins & helpers
+
+.rounded(){
+	border-radius: @radius;
+}
+.transition(){
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.clearfix{
+	clear:both;
+}
+
+//-----------------------------------------
+//`General
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+html{
+	background-color: @color-background;
+	color: @color-dark;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 20px;
+}
+
+body{
+	margin:0 auto;
+	width:500px;
+}
+
+a{
+	.transition;
+
+	&{
+		color: @color-bright;
+	}
+	
+	&:hover,
+	&:active{
+		color: darken(@color-bright, 10%);
+	}
+}
+
+header{
+	border-bottom: 5px solid @color-dark;
+	margin-bottom: @spacing * 2;
+	
+	h1,
+	h2{
+		margin: 0 0 @spacing 0;
+	}
+
+	h1{
+		font-size: 50px;
+		text-align: center;
+	}
+	h2{
+		color: @color-highlight;
+		font-size: 30px;
+		text-align: right;
+	}
+}
+
+
+//-----------------------------------------
+//`List
+
+#todo{
+	//border: 3px solid @color-dark;
+	list-style: none;
+	margin:0 0 @spacing*2 0;
+	padding:0;
+
+	.rounded;
+}
+
+.item{
+
+	&:nth-child(odd){
+		background-color: lighten(@color-background, 5%);
+	}
+}
+
+.item-text{
+	padding: @spacing / 2 0;
+}
+
+.btn-item-remove{
+	color: @color-highlight;
+	display: inline-block;
+	font-weight: bold;
+	text-decoration: none;
+	padding: @spacing/2 8px;
+
+	&:hover{
+		background-color: @color-highlight;
+		color: @color-background;
+	};
+}
+
+//-----------------------------------------
+//`Forms
+
+input,
+button{
+	border: none;
+	font-size: 20px;
+	padding: @spacing/2;
+	margin: 0;
+
+	&:focus{
+		outline:none;
+	}
+	
+	.transition;
+	.rounded;
+}
+
+input{
+	&:focus{
+		box-shadow: 0 0 @spacing*2 @color-bright, inset 0 0 1px @color-bright;
+	}
+}
+
+button{
+	background-color: @color-bright;
+	border: none;
+	cursor: pointer;
+	color: @color-light;
+
+	&:focus,
+	&:hover{
+		box-shadow: 0 0 @spacing*2 @color-bright;
+	}
+
+	&:active{
+		background-color: darken(@color-bright, 10%);
+		box-shadow: 0 0 @spacing*3 darken(@color-bright, 10%);
+	}
+}
+
+#txt-item-add{
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	float:left;
+	width: 80%;
+}
+
+#btn-item-add{
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	width: 20%;
+}
