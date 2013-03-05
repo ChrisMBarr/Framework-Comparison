@@ -2,14 +2,38 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8248",
   "files" : {
-    "\/knockout\/list.html" : {
+    "\/backbone\/list.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/knockout\/list.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/backbone\/list.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/backbone\/list.min.js",
+      "fileType" : 64
+    },
+    "\/ember\/list.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/ember\/list.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/ember\/list.min.js",
+      "fileType" : 64
+    },
+    "\/knockout\/list.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/knockout\/list.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/knockout\/list.min.js",
+      "fileType" : 64
     },
     "\/angular\/list.html" : {
       "ignoreWasSetByUser" : 0,
@@ -17,6 +41,15 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/angular\/list.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/knockout\/list.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/knockout\/list.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -38,6 +71,26 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
+    "\/vanilla\/list.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/vanilla\/list.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/vanilla\/list.min.js",
+      "fileType" : 64
+    },
+    "\/vanilla\/list.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/vanilla\/list.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/ember\/list.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -46,6 +99,17 @@
       "inputAbbreviatedPath" : "\/ember\/list.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/jquery\/list.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/jquery\/list.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/jquery\/list.min.js",
+      "fileType" : 64
     },
     "\/_styles\/list.less" : {
       "ignoreWasSetByUser" : 0,
@@ -60,6 +124,17 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
+    "\/jquery\/jquery-1.9.1.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/jquery\/jquery-1.9.1.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/jquery\/jquery-1.9.1.min.min.js",
+      "fileType" : 64
+    },
     "\/knockout\/knockout-2.2.1.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -69,17 +144,6 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/knockout\/knockout-2.2.1.min.js",
-      "fileType" : 64
-    },
-    "\/angular\/angular.min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/angular\/angular.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/angular\/angular.min.min.js",
       "fileType" : 64
     },
     "\/ember\/ember-1.0.0-rc.1.min.js" : {
@@ -93,15 +157,15 @@
       "outputAbbreviatedPath" : "\/ember\/ember-1.0.0-rc.1.min.min.js",
       "fileType" : 64
     },
-    "\/jquery\/jquery-1.9.1.min.js" : {
+    "\/angular\/angular.min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/jquery\/jquery-1.9.1.min.js",
+      "inputAbbreviatedPath" : "\/angular\/angular.min.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/jquery\/jquery-1.9.1.min.min.js",
+      "outputAbbreviatedPath" : "\/angular\/angular.min.min.js",
       "fileType" : 64
     },
     "\/backbone\/backbone-min.js" : {
@@ -123,6 +187,17 @@
       "inputAbbreviatedPath" : "\/backbone\/list.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/angular\/list.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/angular\/list.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/angular\/list.min.js",
+      "fileType" : 64
     }
   },
   "manualImportLinks" : [
