@@ -168,3 +168,19 @@ button{
 	border-bottom-left-radius: 0;
 	width: 20%;
 }
+
+#btn-remove-completed{
+	background-color: @color-highlight;
+	margin-top: @spacing * 2;
+	float:right;
+
+	&:focus,
+	&:hover{
+		box-shadow: 0 0 @spacing*2 @color-highlight;
+	}
+
+	&:active{
+		background-color: darken(@color-highlight, 10%);
+		box-shadow: 0 0 @spacing*3 darken(@color-highlight, 10%);
+	}
+}

@@ -111,3 +111,16 @@ button:active {
   border-bottom-left-radius: 0;
   width: 20%;
 }
+#btn-remove-completed {
+  background-color: #ce534d;
+  margin-top: 20px;
+  float: right;
+}
+#btn-remove-completed:focus,
+#btn-remove-completed:hover {
+  box-shadow: 0 0 20px #ce534d;
+}
+#btn-remove-completed:active {
+  background-color: #b63832;
+  box-shadow: 0 0 30px #b63832;
+}
