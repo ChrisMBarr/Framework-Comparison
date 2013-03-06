@@ -179,15 +179,15 @@
       "outputAbbreviatedPath" : "\/ember\/ember-1.0.0-rc.1.min.min.js",
       "fileType" : 64
     },
-    "\/knockout\/knockout-2.2.1.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
+    "\/knockout\/list.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/knockout\/knockout-2.2.1.js",
+      "inputAbbreviatedPath" : "\/knockout\/list.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/knockout\/knockout-2.2.1.min.js",
+      "outputAbbreviatedPath" : "\/knockout\/list.min.js",
       "fileType" : 64
     },
     "\/knockout\/list.html" : {
@@ -199,15 +199,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/knockout\/list.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+    "\/knockout\/knockout-2.2.1.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/knockout\/list.js",
+      "inputAbbreviatedPath" : "\/knockout\/knockout-2.2.1.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/knockout\/list.min.js",
+      "outputAbbreviatedPath" : "\/knockout\/knockout-2.2.1.min.js",
       "fileType" : 64
     }
   },

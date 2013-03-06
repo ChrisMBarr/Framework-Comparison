@@ -10,17 +10,14 @@
 		</header>
 
 		<ul id="todo">
-			<li class="item">
-				<a href="#" class="btn-item-remove">X</a>
-				<span class="item-text">Example item</span>
-			</li>
-			<li class="item">
-				<a href="#" class="btn-item-remove">X</a>
-				<span class="item-text">Another item</span>
+			<li id="item-template" class="item hide">
+				<a href="#" class="btn-mark-incomplete" title="Mark as incomplete">&#10003;</a>
+				<a href="#" class="btn-mark-complete" title="Mark as complete">&#10006;</a>
+				<span class="item-text"></span>
 			</li>
 		</ul>
 
-		<input type="text" id="txt-item-add">
+		<input type="text" id="txt-item-add" />
 		<button id="btn-item-add">Add</button>
 		<button id="btn-remove-completed">Remove Completed Items</button>
 		<div class="clearfix"></div>
