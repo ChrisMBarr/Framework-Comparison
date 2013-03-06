@@ -8,7 +8,7 @@
 
 
 //-----------------------------------------
-//`mixins & helpers
+//`mixins
 
 .rounded(){
 	border-radius: @radius;
@@ -17,10 +17,6 @@
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
-}
-
-.clearfix{
-	clear:both;
 }
 
 //-----------------------------------------
@@ -96,21 +92,56 @@ header{
 	&:nth-child(odd){
 		background-color: lighten(@color-background, 5%);
 	}
+
+	a{
+		font-weight: bold;
+		text-decoration: none;
+		padding: @spacing/2 8px;
+	}
+
+	.btn-mark-complete{
+		display: inline-block;
+	}
+
+	.btn-mark-incomplete{
+		display: none;
+	}
+
+	&.state-complete{
+		.btn-mark-complete{
+			display: none;
+		}
+
+		.btn-mark-incomplete{
+			display: inline-block;
+		}
+	}
 }
 
 .item-text{
 	padding: @spacing / 2 0;
+
+	.state-complete &{
+		text-decoration: line-through;
+		font-style: italic;
+		color: lighten(@color-dark, 20%);
+	}
 }
 
-.btn-item-remove{
+.btn-mark-complete{
 	color: @color-highlight;
-	display: inline-block;
-	font-weight: bold;
-	text-decoration: none;
-	padding: @spacing/2 8px;
 
 	&:hover{
 		background-color: @color-highlight;
+		color: @color-background;
+	};
+}
+
+.btn-mark-incomplete{
+	color: @color-bright;
+
+	&:hover{
+		background-color: @color-bright;
 		color: @color-background;
 	};
 }
@@ -183,4 +214,14 @@ button{
 		background-color: darken(@color-highlight, 10%);
 		box-shadow: 0 0 @spacing*3 darken(@color-highlight, 10%);
 	}
+}
+
+//-----------------------------------------
+//`helpers
+
+.clearfix{
+	clear:both;
+}
+.hide{
+	display:none !important;
 }

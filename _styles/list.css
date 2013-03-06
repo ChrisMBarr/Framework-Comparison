@@ -1,6 +1,3 @@
-.clearfix {
-  clear: both;
-}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -54,18 +51,43 @@ header h2 {
 .item:nth-child(odd) {
   background-color: #e6dfca;
 }
-.item-text {
-  padding: 5px 0;
-}
-.btn-item-remove {
-  color: #ce534d;
-  display: inline-block;
+.item a {
   font-weight: bold;
   text-decoration: none;
   padding: 5px 8px;
 }
-.btn-item-remove:hover {
+.item .btn-mark-complete {
+  display: inline-block;
+}
+.item .btn-mark-incomplete {
+  display: none;
+}
+.item.state-complete .btn-mark-complete {
+  display: none;
+}
+.item.state-complete .btn-mark-incomplete {
+  display: inline-block;
+}
+.item-text {
+  padding: 5px 0;
+}
+.state-complete .item-text {
+  text-decoration: line-through;
+  font-style: italic;
+  color: #7e7868;
+}
+.btn-mark-complete {
+  color: #ce534d;
+}
+.btn-mark-complete:hover {
   background-color: #ce534d;
+  color: #ded4b9;
+}
+.btn-mark-incomplete {
+  color: #64b6b1;
+}
+.btn-mark-incomplete:hover {
+  background-color: #64b6b1;
   color: #ded4b9;
 }
 input,
@@ -123,4 +145,10 @@ button:active {
 #btn-remove-completed:active {
   background-color: #b63832;
   box-shadow: 0 0 30px #b63832;
+}
+.clearfix {
+  clear: both;
+}
+.hide {
+  display: none !important;
 }
