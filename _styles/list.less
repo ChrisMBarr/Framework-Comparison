@@ -185,6 +185,16 @@ button{
 		background-color: darken(@color-bright, 10%);
 		box-shadow: 0 0 @spacing*3 darken(@color-bright, 10%);
 	}
+
+	&:disabled,
+	&:disabled:hover,
+	&:disabled:focus,
+	&:disabled:active{
+		background-color: desaturate(darken(@color-bright, 10%), 20%);
+		color: darken(@color-light, 30%);
+		cursor: not-allowed;
+		box-shadow: none;
+	}
 }
 
 #txt-item-add{
@@ -213,6 +223,10 @@ button{
 	&:active{
 		background-color: darken(@color-highlight, 10%);
 		box-shadow: 0 0 @spacing*3 darken(@color-highlight, 10%);
+	}
+
+	&:disabled{
+		background-color: desaturate(darken(@color-highlight, 10%), 20%);
 	}
 }
 

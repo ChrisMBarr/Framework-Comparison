@@ -122,6 +122,15 @@ button:active {
   background-color: #4a9d98;
   box-shadow: 0 0 30px #4a9d98;
 }
+button:disabled,
+button:disabled:hover,
+button:disabled:focus,
+button:disabled:active {
+  background-color: #618684;
+  color: #b3b3b3;
+  cursor: not-allowed;
+  box-shadow: none;
+}
 #txt-item-add {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -145,6 +154,9 @@ button:active {
 #btn-remove-completed:active {
   background-color: #b63832;
   box-shadow: 0 0 30px #b63832;
+}
+#btn-remove-completed:disabled {
+  background-color: #9f4d49;
 }
 .clearfix {
   clear: both;
