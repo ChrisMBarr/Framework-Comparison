@@ -22,15 +22,15 @@
 
 	//Extend the JavaScript API so we can work with JSON objects directly instead of strings
 	Storage.prototype.saveList = function(data) {
-		var fullData = {items: data};
-		console.log("SAVE", typeof data, data, typeof fullData, fullData);
-		this.setItem(TODO_LIST_KEY, JSON.stringify(fullData));
+		//var fullData = {items: data};
+		//console.log("SAVE", typeof data, data, typeof fullData, fullData);
+		this.setItem(TODO_LIST_KEY, JSON.stringify({items: data}));
 	}
 
 	Storage.prototype.getList = function() {
-		var value = JSON.parse(this.getItem(TODO_LIST_KEY));
-		console.log("GET", value);
-		return value.items;
+		//var value = JSON.parse(this.getItem(TODO_LIST_KEY));
+		//console.log("GET", value);
+		return JSON.parse(this.getItem(TODO_LIST_KEY)).items;
 	}
 
 	//Put some default data in storage if none has ever existed!
