@@ -2,17 +2,14 @@ var todo = (function () {
 
 	var initialItems=[
 		{
-			id: 1,
 			text: "Buy some pies",
 			complete: true
 		},
 		{
-			id: 2,
 			text: "Eat the pies",
 			complete: false
 		},
 		{
-			id: 3,
 			text: "Go buy more pies",
 			complete: false
 		}
@@ -48,8 +45,7 @@ var todo = (function () {
 				if($.trim(itemText) !== ''){
 					actions.addItem({
 						text:itemText,
-						complete:false, 
-						id: helpers.getNextHighestId()
+						complete:false
 					});
 				}
 				$newItemInput.val('');
@@ -102,14 +98,6 @@ var todo = (function () {
 	};
 
 	var helpers = {
-		getNextHighestId:function(){
-			var $items = helpers.getListItems();
-			if($items.length>0){
-				return $items.last().data(dataName).id+1;	
-			}
-			
-			return 0;
-		},
 		getListItems:function(){
 			return $list.children().not("#item-template");
 		}
