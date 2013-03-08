@@ -11,7 +11,7 @@
 
 		<ul id="todo" data-bind="template: { name: 'list-item-template', foreach: items }"></ul>
 
-		<input type="text" id="txt-item-add" data-bind='value:itemToAdd, valueUpdate: "afterkeydown", event: {keydown: watchKeyEvents}' />
+		<input type="text" id="txt-item-add" autofocus data-bind='value:itemToAdd, valueUpdate: "afterkeydown", event: {keydown: watchKeyEvents}' />
 		<button id="btn-item-add" data-bind="click: addItem, enable: itemToAdd().length > 0">Add</button>
 		<button id="btn-remove-completed" data-bind="click: clearCompleted">Remove Completed Items</button>
 		<div class="clearfix"></div>
