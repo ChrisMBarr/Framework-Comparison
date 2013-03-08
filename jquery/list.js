@@ -1,20 +1,5 @@
 var todo = (function () {
 
-	var initialItems=[
-		{
-			text: "Buy some pies",
-			complete: true
-		},
-		{
-			text: "Eat the pies",
-			complete: false
-		},
-		{
-			text: "Go buy more pies",
-			complete: false
-		}
-	];
-
 	var dataName = "info";
 	var $list;
 	var $template;
@@ -34,10 +19,12 @@ var todo = (function () {
 		interaction:function(){
 			$template.find(".btn-mark-complete").click(function(){
 				actions.markItem.call(this,true);
+				helpers.saveList();
 			});
 
 			$template.find(".btn-mark-incomplete").click(function(){
 				actions.markItem.call(this, false);
+				helpers.saveList();
 			});
 
 			function _addNewItem(){
@@ -49,6 +36,8 @@ var todo = (function () {
 					});
 				}
 				$newItemInput.val('');
+
+				helpers.saveList();
 			}
 
 			$("#btn-item-add").click(_addNewItem);
@@ -66,10 +55,12 @@ var todo = (function () {
 							$thisItem.remove();
 						}
 					});
+
+				helpers.saveList();
 			});
 		},
 		populateList : function(){
-			$.each(initialItems, function(){
+			$.each(localStorage.getList(), function(){
 				actions.addItem(this);
 			});
 		}
@@ -93,27 +84,25 @@ var todo = (function () {
 			
 			//Change the data
 			$item.data(dataName).complete = isComplete;
-			
 		}
 	};
 
 	var helpers = {
 		getListItems:function(){
 			return $list.children().not("#item-template");
+		},
+		getListData:function(){
+			var newData=[];
+
+			helpers.getListItems()
+				.each(function(){
+					newData.push($(this).data(dataName));
+				});
+			return newData;
+		},
+		saveList:function(){
+			//Save the list back into storage!
+			localStorage.saveList(helpers.getListData());
 		}
 	};
-
-	// return{
-	// 	displayData:function(){
-	// 		var newData=[];
-
-	// 		helpers.getListItems()
-	// 			.each(function(){
-	// 				newData.push($(this).data(dataName));
-	// 			});
-
-	// 		console.log(newData);
-	// 	}
-	// }
-
 })();

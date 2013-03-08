@@ -18,13 +18,14 @@
 
 		<script type="text/html" id="list-item-template">
 			<li class="item" data-bind="css: {'state-complete': complete}">
-				<a href="#" class="btn-mark-incomplete" title="Mark as incomplete" data-bind="click: mark.bind($data, false), visible: complete()">&#10003;</a>
-				<a href="#" class="btn-mark-complete" title="Mark as complete" data-bind="click: mark.bind($data, true), visible: !complete()">&#10006;</a>
+				<a href="#" class="btn-mark-incomplete" title="Mark as incomplete" data-bind="click: $root.markItem.bind($data, false), visible: complete()">&#10003;</a>
+				<a href="#" class="btn-mark-complete" title="Mark as complete" data-bind="click: $root.markItem.bind($data, true), visible: !complete()">&#10006;</a>
 				<span class="item-text"  data-bind="text: text"></span>
 			</li>
 		</script>
 		
 		<script src="../_libraries/knockout-2.2.1.js"></script>
+		<script src="../_helpers/storageHelper.js"></script>
 		<script src="list.js"></script>
 	</body>
 </html>

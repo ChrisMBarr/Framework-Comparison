@@ -11,15 +11,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/knockout\/list.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+    "\/_libraries\/backbone-min.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/knockout\/list.js",
+      "inputAbbreviatedPath" : "\/_libraries\/backbone-min.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/knockout\/list.min.js",
+      "outputAbbreviatedPath" : "\/_libraries\/backbone-min.min.js",
       "fileType" : 64
     },
     "\/angular\/list.js" : {
@@ -177,6 +177,17 @@
       "outputAbbreviatedPath" : "\/backbone\/list.min.js",
       "fileType" : 64
     },
+    "\/_helpers\/storageHelper.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_helpers\/storageHelper.js",
+      "outputStyle" : 0,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/_helpers\/storageHelper.min.js",
+      "fileType" : 64
+    },
     "\/_styles\/list.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -210,15 +221,15 @@
       "outputAbbreviatedPath" : "\/_libraries\/knockout-2.2.1.min.js",
       "fileType" : 64
     },
-    "\/_libraries\/backbone-min.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
+    "\/knockout\/list.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_libraries\/backbone-min.js",
+      "inputAbbreviatedPath" : "\/knockout\/list.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/_libraries\/backbone-min.min.js",
+      "outputAbbreviatedPath" : "\/knockout\/list.min.js",
       "fileType" : 64
     }
   },
