@@ -9,18 +9,20 @@
 			<h2>Now with <a href="http://knockoutjs.com">Knockout</a>!</h2>
 		</header>
 
-		<ul id="todo">
-			<li id="item-template" class="item hide">
-				<a href="#" class="btn-mark-incomplete" title="Mark as incomplete">&#10003;</a>
-				<a href="#" class="btn-mark-complete" title="Mark as complete">&#10006;</a>
-				<span class="item-text"></span>
-			</li>
-		</ul>
+		<ul id="todo" data-bind="template: { name: 'list-item-template', foreach: items }"></ul>
 
-		<input type="text" id="txt-item-add" />
-		<button id="btn-item-add">Add</button>
-		<button id="btn-remove-completed">Remove Completed Items</button>
+		<input type="text" id="txt-item-add" data-bind='value:itemToAdd, valueUpdate: "afterkeydown", event: {keydown: watchKeyEvents}' />
+		<button id="btn-item-add" data-bind="click: addItem, enable: itemToAdd().length > 0">Add</button>
+		<button id="btn-remove-completed" data-bind="click: clearCompleted">Remove Completed Items</button>
 		<div class="clearfix"></div>
+
+		<script type="text/html" id="list-item-template">
+			<li class="item" data-bind="css: {'state-complete': complete}">
+				<a href="#" class="btn-mark-incomplete" title="Mark as incomplete" data-bind="click: mark.bind($data, false), visible: complete()">&#10003;</a>
+				<a href="#" class="btn-mark-complete" title="Mark as complete" data-bind="click: mark.bind($data, true), visible: !complete()">&#10006;</a>
+				<span class="item-text"  data-bind="text: text"></span>
+			</li>
+		</script>
 		
 		<script src="knockout-2.2.1.js"></script>
 		<script src="list.js"></script>
