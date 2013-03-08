@@ -72,7 +72,7 @@ var todo = (function () {
 				.clone(true)
 				.removeClass("hide")
 				.removeAttr("id")
-				.appendTo($list)
+				.insertBefore($template)
 				.toggleClass("state-complete", thisData.complete)
 				.data(dataName, thisData)
 				.find(".item-text")
